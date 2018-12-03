@@ -1,5 +1,20 @@
 
 # react-native-android-whitelist
+Many android manufactuers have power saving optimizations that prevents applications from receiving push notifications while the app is not active.  This package will help you alert the user to whitelist your app so that push notifications will arrive more reliably.
+
+Supported Manufacturers:
+
+| Manufacturer 	| Power Saving Feature       	|
+|--------------	|----------------------------	|
+| Asus         	| Auto-Start Manager         	|
+| MIUI         	| Auto-Start Manager         	|
+| Letv         	| Auto-Boot Manager          	|
+| Huawei       	| Protected Apps             	|
+| Coloros      	| Startup App List           	|
+| Oppo         	| Startup App                	|
+| Vivo         	| Background Startup Manager 	|
+| Samsung      	| Battery Activity           	|
+
 
 ## Getting started
 
@@ -10,7 +25,6 @@
 `$ react-native link react-native-android-whitelist`
 
 ### Manual installation
-
 
 #### Android
 
@@ -28,10 +42,19 @@
   	```
 
 ## Usage
-```javascript
-import RNReactNativeAndroidWhitelist from 'react-native-android-whitelist';
 
-// TODO: What to do with the module?
-RNReactNativeAndroidWhitelist;
+
+```javascript
+import RNAndroidWhitelist from 'react-native-android-whitelist';
+
+const config = {
+  title: "Android Whitelist",
+  text: "To ensure timely delivery of push notifications, please whitelist our app.",
+  doNotShowAgainText: "Do not show again",
+  positiveText: "Whitelist",
+  negativeText: "Cancel"
+};
+
+RNAndroidWhitelist.alert(config);
 ```
   
