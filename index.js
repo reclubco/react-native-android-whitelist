@@ -4,7 +4,7 @@ import { NativeModules, Platform } from 'react-native'
 const { RNAndroidWhitelist } = NativeModules
 
 class AndroidWhitelist {
-  static AlertIfHuaweiDevice = (config) => {
+  static alert = (config) => {
     if (Platform.OS === 'android') {
       RNAndroidWhitelist.AlertIfWhitelist(config.title, config.text, config.doNotShowAgainText, config.positiveText, config.negativeText)
     }
