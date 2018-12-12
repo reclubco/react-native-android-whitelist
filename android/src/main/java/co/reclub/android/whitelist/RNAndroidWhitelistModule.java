@@ -17,11 +17,11 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 
-public class RNReactNativeAndroidWhitelistModule extends ReactContextBaseJavaModule {
+public class RNAndroidWhitelistModule extends ReactContextBaseJavaModule {
 
   private final ReactApplicationContext reactContext;
 
-  public RNReactNativeAndroidWhitelistModule(ReactApplicationContext reactContext) {
+  public RNAndroidWhitelistModule(ReactApplicationContext reactContext) {
     super(reactContext);
     this.reactContext = reactContext;
   }
