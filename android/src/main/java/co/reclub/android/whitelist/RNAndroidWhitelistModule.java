@@ -75,7 +75,6 @@ public class RNAndroidWhitelistModule extends ReactContextBaseJavaModule {
           layout.addView(dontShowAgain);
 
           new AlertDialog.Builder(this.getCurrentActivity())
-            .setIcon(android.R.drawable.ic_dialog_alert)
             .setTitle(title)
             .setMessage(message)
             .setView(layout)
@@ -84,6 +83,8 @@ public class RNAndroidWhitelistModule extends ReactContextBaseJavaModule {
               try {
                 for (Intent intent : AUTO_START_INTENTS)
                   if (isCallable(intent)) {
+                    editor.putBoolean(saveIfSkip, true);
+                    editor.apply();
                     reactContext.startActivity(intent);
                     break;
                   }
