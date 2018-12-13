@@ -29,16 +29,16 @@ Supported Manufacturers:
 #### Android
 
 1. Open up `android/app/src/main/java/[...]/MainActivity.java`
-  - Add `import com.reactlibrary.RNAndroidWhitelistPackage;` to the imports at the top of the file
+  - Add `import co.reclub.android.whitelist.RNAndroidWhitelistPackage;` to the imports at the top of the file
   - Add `new RNAndroidWhitelistPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
   	include ':react-native-android-whitelist'
-  	project(':react-native-android-whitelist').projectDir = new File(rootProject.projectDir, 	'../node_modulesreact-native-android-whitelist/android')
+    project(':react-native-android-whitelist').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-android-whitelist/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-android-whitelist')
+    implementation project(':react-native-android-whitelist')
   	```
 
 ## Usage
