@@ -1,16 +1,35 @@
 {
   "name": "react-native-android-whitelist",
   "version": "0.1.0",
-  "description": "",
+  "description": "Many android manufactuers have power saving optimizations that prevents applications from receiving push notifications while the app is not active. This package will help you alert the user to whitelist your app so that push notifications will arrive more reliably.",
   "main": "index.js",
   "types": "index.d.ts",
-  "scripts": {},
+  "directories": {
+    "android": "android"
+  },
+  "rnpm": {
+    "android": {
+      "packageInstance": "new RNAndroidWhitelistPackage()",
+      "sourceDir": "./android"
+    }
+  },
   "keywords": [
-    "react-native", "android",
+    "react-native",
+    "android",
+    "battery",
+    "whitelist"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:reclubco/react-native-android-whitelist.git"
+  },
+  "bugs": {
+    "url": "https://github.com/reclubco/react-native-android-whitelist/issues"
+  },
+  "homepage": "https://github.com/reclubco/react-native-android-whitelist",
+  "dependencies": {},
   "peerDependencies": {
-    "react-native": "^0.41.2",
-    "react-native-windows": "0.41.0-rc.1"
+    "react-native": ">=0.47"
   }
 }
