@@ -3,8 +3,11 @@ import { NativeModules, Platform } from 'react-native'
 
 const { RNAndroidWhitelist } = NativeModules
 
-export const alert = (config) => {
+const alert = (config) => {
   if (Platform.OS === 'android') {
     RNAndroidWhitelist.AlertIfWhitelist(config.title, config.text, config.doNotShowAgainText, config.positiveText, config.negativeText)
   }
 }
+
+export default { alert }
+
