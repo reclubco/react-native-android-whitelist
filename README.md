@@ -15,12 +15,13 @@ Supported Manufacturers:
 | Vivo         	| Background Startup Manager 	|
 | Samsung      	| Battery Activity           	|
 
+![screenshot](https://i.imgur.com/NJSqyrg.png)
 
 ## Getting started
 
 `$ npm install react-native-android-whitelist --save`
 
-### Mostly automatic installation
+### Automatic installation
 
 `$ react-native link react-native-android-whitelist`
 
