@@ -1,6 +1,6 @@
 
 # react-native-android-whitelist
-Many android manufactuers have power saving optimizations that prevents applications from receiving push notifications while the app is not active.  This package will help you alert the user to whitelist your app so that push notifications will arrive more reliably.
+Many android manufactuers have power saving optimizations that prevents applications from receiving push notifications while the app is not active.  This package will help you alert the user to whitelist your app so that push notifications will arrive more reliably.  To learn more about this problem, please visit https://dontkillmyapp.com/
 
 Supported Manufacturers:
 
