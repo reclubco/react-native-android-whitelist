@@ -21,11 +21,13 @@ Supported Manufacturers:
 
 `$ npm install react-native-android-whitelist --save`
 
-### Automatic installation
+### React Native versions < 0.60
+
+#### Automatic installation
 
 `$ react-native link react-native-android-whitelist`
 
-### Manual installation
+#### Manual installation
 
 #### Android
 
