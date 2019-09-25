@@ -23,6 +23,9 @@ Supported Manufacturers:
 
 ### React Native versions < 0.60
 
+Please use this the reverse-jetify functionality of the following library to convert back from AndroidX:
+https://github.com/mikehardy/jetifier
+
 #### Automatic installation
 
 `$ react-native link react-native-android-whitelist`
