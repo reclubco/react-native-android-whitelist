@@ -7,12 +7,6 @@
   "directories": {
     "android": "android"
   },
-  "rnpm": {
-    "android": {
-      "packageInstance": "new RNAndroidWhitelistPackage()",
-      "sourceDir": "./android"
-    }
-  },
   "keywords": [
     "react-native",
     "android",
