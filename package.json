@@ -1,6 +1,6 @@
 {
   "name": "react-native-android-whitelist",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Many android manufactuers have power saving optimizations that prevents applications from receiving push notifications while the app is not active. This package will help you alert the user to whitelist your app so that push notifications will arrive more reliably.",
   "main": "index.js",
   "types": "index.d.ts",
