@@ -86,6 +86,7 @@ public class RNAndroidWhitelistModule extends ReactContextBaseJavaModule {
                   if (isCallable(intent)) {
                     editor.putBoolean(saveIfSkip, true);
                     editor.apply();
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
                     reactContext.startActivity(intent);
                     break;
                   }
